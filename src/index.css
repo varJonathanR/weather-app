@@ -1,0 +1,59 @@
+/* Base & Reset */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --blue: #0000FF;
+    --bg-color: #100E1D;
+    --light-bg-color: #1E213A;
+    --font-color: #E7E7EB;
+    --yellow: #FFEC65;
+    --gray: #616475;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: var(--font-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+body, #root {
+    width: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.bi-crosshair, button {
+    cursor: pointer;
+    background-color: var(--gray);
+}
+
+button {
+    border: none;
+    padding: 10px 1rem;
+}
+
+.bi-crosshair {
+    font-size: 22px;
+    border-radius: 50%;
+    padding: 5px;
+    justify-content: center;
+}
+
+.flex, i {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    color: var(--bg-color);
+}
