@@ -3,7 +3,7 @@
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
    
-   [![Netlify Status](https://api.netlify.com/api/v1/badges/99b56f79-49b6-4f68-acc7-d8d91027c01b/deploy-status)](https://app.netlify.com/sites/weather-app-varjonathanr/deploys)
+   [![Netlify Status](https://api.netlify.com/api/v1/badges/4654d1d2-2401-4040-945e-4eb7bde367b2/deploy-status)](https://app.netlify.com/sites/weather-app-varjonathanr/deploys)
 </div>
 
 <div align="center">
