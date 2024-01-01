@@ -9,7 +9,7 @@ export const iconData = {
     lightRain: "/assets/LightRain.png",
     heavyRain: "/assets/HeavyRain.png",
     /* Snow Icons */
-    snow: "/public/assets/Snow.png",
+    snow: "/assets/Snow.png",
     hail: "/assets/Hail.png",
     sleet: "/assets/Sleet.png",
     /* Thunderstorm Icon */
