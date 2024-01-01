@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CITIES_API_URL, CURRENT_WEATHER_API_URL, FORECAST_WEATHER_API_URL } from '../utils/API';
+import { CITIES_API_URL, CURRENT_WEATHER_API_URL, FORECAST_WEATHER_API_URL, options } from '../utils/API';
 import { removeSpecialCharacters } from '../utils/RemSpeCha';
 import styled from 'styled-components';
 import Loader from './Loader';
@@ -14,14 +14,16 @@ export default function Search({ search, setSearch, setCurrentData, setForecastD
         setCity(c.target.value);
     };
 
+    console.log(searchData)
+
     const searchCity = () => {
         setIsSearchingCity(true);
 
-        fetch(CITIES_API_URL + city)
+        fetch(CITIES_API_URL + city, options)
             .then((response) => response.json())
             .then((data) => {
-                const filteredData = data?.geonames.filter(cities => {
-                    const cleanCityName = removeSpecialCharacters(cities.name);
+                const filteredData = data?.data.filter(cities => {
+                    const cleanCityName = removeSpecialCharacters(cities.city);
                     const cleanSearch = removeSpecialCharacters(city);
 
                     return cleanCityName === cleanSearch;
@@ -61,8 +63,8 @@ export default function Search({ search, setSearch, setCurrentData, setForecastD
                 ) : (
                     searchData.map(city => (
                         <p
-                            key={city.geonameId}
-                            onClick={() => handleInsertSearch(city.lng, city.lat)}
+                            key={city.id}
+                            onClick={() => handleInsertSearch(city.longitude, city.latitude)}
                         >{`${city.name}, ${city.countryCode}`}<i className="bi bi-caret-right"></i></p>
                     ))
                 )}

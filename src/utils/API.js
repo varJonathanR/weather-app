@@ -1,7 +1,6 @@
-import { useState } from "react";
-
 export const WEATHER_API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-export const CITIES_API_URL = "http://api.geonames.org/searchJSON?username=varJonathanR&featureClass=P&style=short&q=";
+export const GEO_API_KEY = import.meta.env.VITE_GEO_API_KEY;
+export const CITIES_API_URL = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?limit=10&namePrefix=`;
 export const CURRENT_WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/weather?";
 export const FORECAST_WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/forecast?";
 
@@ -13,3 +12,11 @@ export function FetchAPI(apiURL, lat, lon, setData) {
         })
         .catch(error => console.log(error));
 }
+
+export const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': GEO_API_KEY,
+		'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
+	}
+};
