@@ -1,17 +1,17 @@
 export const iconData = {
     /* Clear Icon */
-    clear: "../../src/assets/Clear.png",
+    clear: "/assets/Clear.png",
     /* Clouds Icons */
-    lightCloud: "../../src/assets/LightCloud.png",
-    heavyCloud: "../../src/assets/HeavyCloud.png",
+    lightCloud: "/assets/LightCloud.png",
+    heavyCloud: "/assets/HeavyCloud.png",
     /* Rain Icons */
-    shower: "../../src/assets/Shower.png",
-    lightRain: "../../src/assets/LightRain.png",
-    heavyRain: "../../src/assets/HeavyRain.png",
+    shower: "/assets/Shower.png",
+    lightRain: "/assets/LightRain.png",
+    heavyRain: "/assets/HeavyRain.png",
     /* Snow Icons */
-    snow: "../../src/assets/Snow.png",
-    hail: "../../src/assets/Hail.png",
-    sleet: "../../src/assets/Sleet.png",
+    snow: "/public/assets/Snow.png",
+    hail: "/assets/Hail.png",
+    sleet: "/assets/Sleet.png",
     /* Thunderstorm Icon */
-    thunderstorm: "../../src/assets/Thunderstorm.png"
+    thunderstorm: "/assets/Thunderstorm.png"
 };

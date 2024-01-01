@@ -17,7 +17,7 @@ export default function Aside({ currentData, setCurrentData, setForecastData, te
             <section className="icon-container">
                 <img
                     className="background"
-                    src="../../src/assets/Cloud-background.png"
+                    src="/assets/Cloud-background.png"
                     alt="Background"
                 />
                 { currentData && (

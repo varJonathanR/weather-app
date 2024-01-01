@@ -2,6 +2,8 @@
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+   
+   [![Netlify Status](https://api.netlify.com/api/v1/badges/99b56f79-49b6-4f68-acc7-d8d91027c01b/deploy-status)](https://app.netlify.com/sites/weather-app-varjonathanr/deploys)
 </div>
 
 <div align="center">
@@ -10,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://legacy.devchallenges.io/solutions/UvODcXUm1qOXBVI8JLn6">
       Solution
     </a>
     <span> | </span>
