@@ -1,6 +1,6 @@
 import React from 'react'
 import PercentageBar from './PercentageBar';
-import { getWindDirection } from '../utils/getWindDirection';
+import { getWindDirection } from '../utils/GetWindDirection';
 import styled from 'styled-components';
 
 export default function Hightlight({ data, desc, deg, percentage }) {

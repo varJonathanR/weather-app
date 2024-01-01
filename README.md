@@ -30,7 +30,7 @@
 
 ## Overview
 
-![Windbnb Preview](https://github.com/varJonathanR/weather-app/blob/main/public/weather-app_preview.png)
+![Weather App Preview](https://github.com/varJonathanR/weather-app/blob/main/public/weather-app_preview.PNG)
 
 This challenge was very challenging and full of learning experiences. I strengthened my knowledge in React, and it was very rewarding to work with three different APIs simultaneously and to have successfully completed the challenge. I take pride in knowing that with each challenge, I enhance my programming skills and logical thinking to effectively solve new problems.
 
