@@ -10,9 +10,9 @@ export default function Footer() {
 }
 
 const FooterStyled = styled.footer`
+    margin-top: 1rem;
     text-align: center;
     width: 100%;
-    padding: 1rem;
 
     & p, & a {
         text-decoration: none;

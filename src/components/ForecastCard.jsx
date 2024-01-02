@@ -31,12 +31,12 @@ const ForecastCards = styled.article.attrs(props => ({
 }))`
     background-color: var(--light-bg-color);
     flex-direction: column;
-    height: 200px;
-    width: 150px;
+    height: 180px;
+    width: 140px;
     padding: 1rem 2rem;
     gap: 1rem;
     position: relative;
-    font-size: 14px;
+    font-size: 12px;
 
     & .flex {
         width: 100%;
@@ -58,8 +58,8 @@ const ForecastCards = styled.article.attrs(props => ({
     }
 
     & .img-container {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         margin: 5px auto;
 
         & img {

@@ -32,8 +32,8 @@ const MainSection = styled.main`
 
         & .temp {
             margin-left: 10px;
-            width: 34px;
-            height: 34px;
+            width: 30px;
+            height: 30px;
             padding: 8px;
             border-radius: 50%;
             background-color: var(--gray);
@@ -51,8 +51,9 @@ const MainSection = styled.main`
     }
 
     & h1 {
-        margin: 1.5rem 0;
-        padding: 0 4rem;
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        padding: 0 2rem;
     }
 
     @media screen and (max-width: 1023px) {

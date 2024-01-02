@@ -20,11 +20,11 @@ export default function Forecast({ forecastData, tempScale }) {
 }
 
 const ForecastContainer = styled.section`
-    padding: 1rem 2rem 1rem 3rem;
+    padding: 1rem 2rem 0 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     place-items: center;
-    gap: 1rem;
+    gap: .8rem;
 
     @media screen and (max-width: 1023px) {
         padding: 1rem 1rem;

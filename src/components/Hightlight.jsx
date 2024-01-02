@@ -15,18 +15,16 @@ export default function Hightlight({ data, desc, deg, percentage }) {
 
     return (
         <>
-            <HightlightCard>
+            <HightlightCard className={`hightlight flex ${deg || percentage ? "" : "small-card"}`}>
                 <p>{label}</p>
                 <h1 className='hightlight-title'>{data} {unit}</h1>
                 { desc === "humidity" ? 
-                    <PercentageBar percentage={percentage} />
-                    : ""
-                }
-                { desc === "wind" ? 
-                    <p className='direction flex'>
-                        <i className="bi bi-compass-fill"></i>
-                        { getWindDirection(deg) }
-                    </p>
+                        <PercentageBar percentage={percentage} />
+                    : desc === "wind" ? 
+                        <p className='direction flex'>
+                            <i className="bi bi-compass-fill"></i>
+                            { getWindDirection(deg) }
+                        </p>
                     : ""
                 }
             </HightlightCard>
@@ -35,18 +33,20 @@ export default function Hightlight({ data, desc, deg, percentage }) {
 }
 
 
-const HightlightCard = styled.article.attrs(props => ({
-    className: "hightlight flex"
-}))`
+const HightlightCard = styled.article`
     padding: 1rem;
     flex-direction: column;
     justify-content: center;
     background-color: var(--light-bg-color);
-    height: 160px;
+    height: 150px;
     width: 400px;
 
+    &.small-card {
+        height: 100px;
+    }
+
     & .hightlight-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin: 0;
     }
 

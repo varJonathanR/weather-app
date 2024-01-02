@@ -74,6 +74,8 @@ export default function Search({ search, setSearch, setCurrentData, setForecastD
 }
 
 const SearchNav = styled.section`
+    padding: 1rem;
+
     & label {
         padding: 9px;
         width: 100%;

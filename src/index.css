@@ -57,3 +57,7 @@ button {
 input {
     color: var(--bg-color);
 }
+
+aside, .search-nav {
+    background-color: var(--light-bg-color);
+}

@@ -82,6 +82,7 @@ const AsideSection = styled.aside`
     text-align: center;
     overflow: hidden;
     position: relative;
+    padding: 1rem;
 
     .search-nav-prev {
         justify-content: space-between;
@@ -133,7 +134,7 @@ const AsideSection = styled.aside`
 
         & h2 {
             font-size: 2.4rem;
-            margin: 2rem 0;
+            margin: 1rem 0;
         }
 
         & .current-location {
