@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Hightlights from '../components/Highlights';
 import styled from 'styled-components'
 import Forecast from '../components/Forecast';
+import Footer from '../components/Footer';
 
 export default function Main({ currentData, forecastData, tempScale, setTempScale }) {
 
@@ -17,6 +18,7 @@ export default function Main({ currentData, forecastData, tempScale, setTempScal
             </p>
             <Forecast forecastData={forecastData} tempScale={tempScale} />
             <Hightlights currentData={currentData} />
+            <Footer />
         </MainSection>
     )
 }
@@ -49,6 +51,7 @@ const MainSection = styled.main`
     }
 
     & h1 {
+        margin: 1.5rem 0;
         padding: 0 4rem;
     }
 

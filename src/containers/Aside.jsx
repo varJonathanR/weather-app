@@ -4,15 +4,36 @@ import { KelvinToCelcius, KelvinToFahrenheit } from "../utils/KelvinConverter";
 import { EpochToDate } from "../utils/EpochToDate";
 import WeatherIcon from "../components/WeatherIcon";
 import styled from "styled-components";
+import { FetchAPI } from "../utils/API";
+import { CURRENT_WEATHER_API_URL, FORECAST_WEATHER_API_URL } from "../utils/API";
 
 export default function Aside({ currentData, setCurrentData, setForecastData, tempScale }) {
     const [search, setSearch] = useState(false);
+
+    const getCurrentLocation = () => {
+        if(navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(fetchCurrentPosition);
+        } else {
+            alert("Whoops!, Geolocation is not supported by this browser.")
+        }
+    };
+
+    const fetchCurrentPosition = (position) => {
+        FetchAPI(CURRENT_WEATHER_API_URL, 
+            position.coords.latitude, 
+            position.coords.longitude, 
+            setCurrentData);
+        FetchAPI(FORECAST_WEATHER_API_URL, 
+            position.coords.latitude, 
+            position.coords.longitude, 
+            setForecastData);
+    };
 
     return (
         <AsideSection>
             <section className="search-nav-prev flex">
                 <button onClick={() => setSearch(true)}>Search for places</button>
-                <i className="bi bi-crosshair"></i>
+                <i className="bi bi-crosshair" onClick={getCurrentLocation}></i>
             </section>
             <section className="icon-container">
                 <img

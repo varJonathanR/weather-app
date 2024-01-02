@@ -19,12 +19,10 @@ export default function Forecast({ forecastData, tempScale }) {
     )
 }
 
-const ForecastContainer = styled.section.attrs(props => ({
-    className: "flex"
-}))`
-    padding: 1rem 5rem;
+const ForecastContainer = styled.section`
+    padding: 1rem 2rem 1rem 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     place-items: center;
     gap: 1rem;
 

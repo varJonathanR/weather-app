@@ -31,7 +31,7 @@ export default function Hightlights({ currentData }) {
 
 const HightlightsContainer = styled.section`
     margin: 1rem auto;
-    width: 60%;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
