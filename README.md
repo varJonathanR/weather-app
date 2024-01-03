@@ -34,7 +34,19 @@
 
 ![Weather App Preview](https://github.com/varJonathanR/weather-app/blob/main/public/weather-app_preview.PNG)
 
-This challenge was very challenging and full of learning experiences. I strengthened my knowledge in React, and it was very rewarding to work with two different APIs simultaneously and multiple endpoints to have successfully completed the challenge. I take pride in knowing that with each challenge, I enhance my programming skills and logical thinking to effectively solve new problems. And also learned that Netlify & Vercel blocks any http API request.
+Welcome my Weather App, your go-to destination for real-time weather information from around the world! This comprehensive weather application provides you with a forecast for the next 5 days (daily average) and current conditions.
+
+### Key Features:
+
+✔️ Global Coverage: Access weather data for locations worldwide. Whether you're planning a trip or just curious about the weather elsewhere, WeatherApp has you covered. (Limited by [GeoDB API](https://rapidapi.com/wirefreethought/api/geodb-cities/))
+
+✔️ 5-Day Forecast: Stay ahead of the weather with a detailed forecast for the upcoming 5 days. Plan your activities with confidence, knowing what to expect in advance. (Daily average)
+
+✔️ Current Conditions: Get real-time updates on the current weather conditions, including temperature, humidity, wind speed, and wind direction.
+
+✔️ Geolocation: Allow Weather App to access your current location for instant, personalized weather information tailored to your surroundings.
+
+✔️ User-Friendly Interface: Enjoy a seamless and intuitive user interface, making it easy to navigate and retrieve the weather data you need.
 
 > [!NOTE]
 > This project does not store information about your geolocation and is not used for any purpose other than calling the [OpenWeather](https://openweathermap.org/) API.
@@ -44,8 +56,8 @@ This challenge was very challenging and full of learning experiences. I strength
 - [React](https://reactjs.org/)
 - CSS
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
-- [Current & Forecast Weather API](https://openweathermap.org/)
-- [Cities API](https://www.geonames.org/)
+- [Openweather API](https://openweathermap.org/)
+- [GeoDB API](https://rapidapi.com/wirefreethought/api/geodb-cities/)
 - [Styled Components](https://styled-components.com/)
 
 ## Features
