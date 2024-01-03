@@ -34,7 +34,7 @@
 
 ![Weather App Preview](https://github.com/varJonathanR/weather-app/blob/main/public/weather-app_preview.PNG)
 
-This challenge was very challenging and full of learning experiences. I strengthened my knowledge in React, and it was very rewarding to work with three different APIs simultaneously and to have successfully completed the challenge. I take pride in knowing that with each challenge, I enhance my programming skills and logical thinking to effectively solve new problems. And also learned that Netlify & Vercel blocks any http request.
+This challenge was very challenging and full of learning experiences. I strengthened my knowledge in React, and it was very rewarding to work with two different APIs simultaneously and multiple endpoints to have successfully completed the challenge. I take pride in knowing that with each challenge, I enhance my programming skills and logical thinking to effectively solve new problems. And also learned that Netlify & Vercel blocks any http API request.
 
 > [!NOTE]
 > This project does not store information about your geolocation and is not used for any purpose other than calling the [OpenWeather](https://openweathermap.org/) API.
